@@ -1,14 +1,18 @@
 p {
-  color: red;
+  color: white;
   text-align: center;
 }
 
 h1 {
-  color: black;
+  color: white;
   text-align: left;
 }
 
 h2 {
-  color: black;
+  color: white;
   text-align: center;
+}
+
+html {
+  background-color: black;
 }
