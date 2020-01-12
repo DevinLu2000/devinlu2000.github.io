@@ -1,6 +1,7 @@
 p {
   color: white;
   text-align: center;
+  vertical-align: baseline;
 }
 
 h1 {
@@ -11,6 +12,7 @@ h1 {
 h2 {
   color: white;
   text-align: center;
+  vertical-align: baseline;
 }
 
 html {
