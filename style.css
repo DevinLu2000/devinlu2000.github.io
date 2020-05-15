@@ -1,12 +1,30 @@
-p {
-  color: black;
-  text-align: center;
-  vertical-align: baseline;
+
+
+* {
+  margin: 0;
+}
+
+html {
+  background-color: white;
+}
+
+.header {
+  padding: 40px;
+  margin: 0;
+  background: black;
+  color: white;
+  font-size: 20px;
+}
+
+.me {
+  float: right;
+  padding: 5px;
 }
 
 a {
+  font-size: x-large;
+  text-align: center;
   color: white;
-  font-size: large;
 }
 
 h1 {
@@ -20,6 +38,6 @@ h2 {
   vertical-align: baseline;
 }
 
-html {
-  background-color: black;
+p {
+  text-align: center;
 }
