@@ -4,6 +4,10 @@
   margin: 0;
 }
 
+body {
+  padding-bottom: 50px;
+}
+
 html {
   background-color: white;
 }
@@ -19,6 +23,20 @@ html {
 .me {
   float: right;
   padding: 5px;
+}
+
+.column {
+  float: left;
+  text-align: center;
+  font-weight: bold;
+  font-size: large;
+  width: 33.33%;
+}
+
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
 a {
@@ -40,4 +58,5 @@ h2 {
 
 p {
   text-align: center;
+  font-size: large;
 }
