@@ -1,11 +1,10 @@
-
-
 * {
   margin: 0;
 }
 
 body {
   padding-bottom: 50px;
+  
 }
 
 html {
@@ -13,16 +12,27 @@ html {
 }
 
 .header {
-  padding: 40px;
+  padding: 150px;
   margin: 0;
   background: black;
   color: white;
-  font-size: 20px;
+  font-size: 25px;
+  position: relative;
 }
 
 .me {
   float: right;
+  padding: 50px;
+
+}
+
+.imageLinks {
+  left: 50%;
+  display: block;
   padding: 5px;
+  position: absolute;
+  bottom: 0;
+  
 }
 
 .column {
@@ -39,6 +49,10 @@ html {
   clear: both;
 }
 
+.information {
+  color: black;
+}
+
 a {
   font-size: x-large;
   text-align: center;
@@ -48,15 +62,54 @@ a {
 h1 {
   color: white;
   text-align: left;
+  text-shadow: 2px 2px navy;
 }
 
 h2 {
   color: black;
   text-align: center;
   vertical-align: baseline;
+  font-size: xx-large;
 }
 
 p {
-  text-align: center;
   font-size: large;
+  
+}
+
+.anim, .anim svg {
+  position: relative;
+  width: 66%;
+  height: 66%;
+}
+.anim path {
+  stroke-width: 2;
+}
+
+.information {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  padding-right: 50px;
+  width: 80%;
+  align-items: center;
+}
+
+.about {
+  padding: 100px 0px; 
+  min-height: 200px; 
+  background-color: white;
+  width: 100%;
+}
+
+.alignment {
+  display: flex;
+  width: 80%;
+  margin: 0 auto;
+  align-items: center;
+}
+
+.profile_left {
+  display: flex;
+  padding-right: 50px;
 }
