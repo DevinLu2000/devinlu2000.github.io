@@ -40,15 +40,20 @@ html {
 .column {
   float: left;
   text-align: center;
-  font-weight: bold;
-  font-size: large;
+  font-size: large; 
   width: 33.33%;
+  margin-bottom: 0 auto;
 }
 
-.row::after {
+.row {
+  padding: 0px 20px;
+}
+
+.row:after {
   content: "";
   display: table;
   clear: both;
+  
 }
 
 .information {
@@ -98,7 +103,7 @@ p {
 }
 
 .about {
-  padding: 100px 0px; 
+  padding: 50px 0px; 
   min-height: 200px; 
   background-color: white;
   width: 100%;
@@ -114,4 +119,17 @@ p {
 .profile_left {
   display: flex;
   padding-right: 50px;
+}
+
+.sources {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.p1 {
+  font-weight: bold;
+}
+
+.text {
+  margin-top: 10px;
 }
