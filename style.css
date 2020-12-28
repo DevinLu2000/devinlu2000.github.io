@@ -43,6 +43,8 @@ html {
   font-size: large; 
   width: 33.33%;
   margin-bottom: 0 auto;
+  height: 100px;
+  line-height: 20px;  
 }
 
 .row {
@@ -132,4 +134,9 @@ p {
 
 .text {
   margin-top: 10px;
+  word-wrap: break-word;
+  width: 500px;
+  display: inline-block;
+  vertical-align: middle;
+  line-height: normal;
 }
