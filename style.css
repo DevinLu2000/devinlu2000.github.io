@@ -20,12 +20,6 @@ html {
   position: relative;
 }
 
-.me {
-  float: right;
-  padding: 50px;
-
-}
-
 .imageLinks {
   display: flex;
   align-items: center;
