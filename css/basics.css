@@ -1,0 +1,36 @@
+h1 {
+    color: white;
+    text-align: left;
+    text-shadow: 2px 2px navy;
+}
+
+h2 {
+    color: black;
+    text-align: center;
+    vertical-align: baseline;
+    font-size: xx-large;
+}
+
+p {
+    font-size: large;
+}
+
+.margin-right-50 {
+    margin-right: 50px;
+}
+
+.padding-top-100 {
+    padding-top: 100px;
+}
+
+* {
+    margin: 0;
+}
+
+html {
+    background-color: white;
+}
+
+.text-center {
+    text-align: center;
+}

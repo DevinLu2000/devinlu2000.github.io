@@ -1,0 +1,28 @@
+.header {
+  padding: 120px;
+  background: black;
+  font-size: 30px;
+}
+
+.anim, .anim svg {
+  width: 66%;
+  height: 66%;
+}
+.anim path {
+  stroke-width: 2;
+}
+
+.about {
+  padding: 50px 0px; 
+  min-height: 200px; 
+  background-color: white;
+  width: 100%;
+}
+
+.center-align {
+  display: flex;
+  width: 80%;
+  margin: 0 auto;
+  align-items: center;
+}
+
