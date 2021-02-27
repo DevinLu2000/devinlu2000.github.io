@@ -1,3 +1,6 @@
+/* CSS stylesheet for main index page */
+
+/* basic setup */
 * {
   margin: 0px;
   padding: 0px;
@@ -52,6 +55,8 @@ body {
   overflow-x: hidden;
 }
 
+
+/* custom styling */
 .header {
   background: linear-gradient(rgba(0,0,0, .1), rgba(0,0,0, .4)), 
       url('./images/me.hpg');
