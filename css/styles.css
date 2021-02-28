@@ -249,6 +249,11 @@ a:focus {
       font-size: 6.5rem;
   }
 
+  .about {
+    flex-direction: column-reverse;
+    align-items: initial;
+  }
+
   p {
     max-width: var(--container-small-width);
   }
