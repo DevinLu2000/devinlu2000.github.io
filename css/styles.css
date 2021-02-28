@@ -109,6 +109,7 @@ a:focus {
   line-height: 1;
   font-size: var(--font-size-huge);
   font-weight: 400;
+  font-family: 'Jost', sans-serif;
 }
 
 .row {
