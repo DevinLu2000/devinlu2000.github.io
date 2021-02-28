@@ -1,6 +1,21 @@
 /* CSS stylesheet for main index page */
 
 /* basic setup */
+
+@font-face {
+  font-family: 'Hk Grotesk';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/HKGrotesk-Regular.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Jost';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/Jost-Regular.ttf') format('woff');
+}
+
 * {
   margin: 0px;
   padding: 0px;
@@ -20,7 +35,7 @@
   --line-height-small: 1.2;
 
   --black: #000;
-  --pink: #ff3258;
+  --red: #ff3258;
   --white: #f0e9f2;
   --white-1: #e5e5e6da;
 
@@ -55,7 +70,31 @@ body {
   overflow-x: hidden;
 }
 
+section {
+  padding: var(--gutter-huge) 0;
+  border-bottom: var(--border-light);
+}
 
+img {
+  object-fit: contain;
+  max-width: 100%;
+}
+
+a {
+  color: var(--white);
+  font-weight: 400;
+  font-family: sans-serif;
+  transition: all .2s;
+  outline: 2px solid transparent;
+}
+
+p {
+  margin: var(--gutter-small-1) 0;
+}
+
+a:focus {
+  outline: 2px solid var(--red);
+}
 /* custom styling */
 .header {
   background: linear-gradient(rgba(0,0,0, .1), rgba(0,0,0, .4)), url('../images/header.jpg');
@@ -70,12 +109,6 @@ body {
   line-height: 1;
   font-size: var(--font-size-huge);
   font-weight: 400;
-}
-
-@media(max-width: 900px) {
-  .heading-primary {
-      font-size: 6.5rem;
-  }
 }
 
 .row {
@@ -120,13 +153,46 @@ body {
 }
 
 .nav-link:hover {
-  color: var(--pink);
+  color: var(--red);
 }
 
 .nav-link:hover::after {
   right: 0;
   height: 2px;
-  background: var(--pink);
+  background: var(--red);
+}
+
+
+.about {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+}
+
+.sub-header {
+  font-family: 'Jost', sans-serif;
+  line-height: var(--line-height-small);
+  color: var(--white);
+  font-weight: 400;
+  font-size: var(--font-size-large);
+  margin-bottom: var(--gutter-medium);
+}
+
+.sub-header::after {
+  content: '';
+  display: block;
+  height: 2px;
+  width: 10rem;
+  background: var(--red);
+  margin: var(--gutter-small);
+}
+
+.about-photo-container {
+  margin-bottom: var(--gutter-normal);
+}
+
+.about-text {
+  flex: 0 0 60%;
 }
 
 .footer {
@@ -149,6 +215,14 @@ body {
   height: 4rem;
 }
 
+@media(min-width: 901px) {
+  
+  .about-photo-container {
+      flex: 1;
+      margin: 0 var(--gutter-huge) 0 0;
+  }
+}
+
 /* mobile tablet styling */
 
 @media(max-width: 1340px) {
@@ -166,6 +240,16 @@ body {
 @media(max-width: 1000px) {
   html {
       font-size: 52%;
+  }
+}
+
+@media(max-width: 900px) {
+  .heading-primary {
+      font-size: 6.5rem;
+  }
+
+  p {
+    max-width: var(--container-small-width);
   }
 }
 
