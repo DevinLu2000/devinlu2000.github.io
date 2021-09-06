@@ -224,8 +224,9 @@ a:focus {
 }
 
 .projects .content .boxes img {
-  max-width: 80px;
-  filter: invert(1);
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
 }
 
 .projects .content .boxes h1 {
