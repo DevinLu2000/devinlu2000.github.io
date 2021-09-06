@@ -187,11 +187,50 @@ a:focus {
   background: var(--red);
 }
 
+.content {
+  display: flex;
+  justify-content: space-between;
+}
 
 .about {
   display: flex;
   flex-direction: row-reverse;
   align-items: center;
+}
+
+.projects {
+  background: #111;
+}
+
+.projects .content {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; 
+  flex-direction: row;
+}
+
+.projects .content .boxes {
+  padding: 40px 20px;
+  background: #222;
+  color: #fff;
+  max-width: 340px;
+  margin: 20px;
+  text-align: center;
+  transition: 0.5%;
+}
+
+.projects .content .boxes:hover {
+  background: #2196f3;
+}
+
+.projects .content .boxes img {
+  max-width: 80px;
+  filter: invert(1);
+}
+
+.projects .content .boxes h1 {
+  font-size: 20px;
+  font-weight: 600;
 }
 
 .sub-header {
